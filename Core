@@ -1,0 +1,12 @@
+<?php
+namespace CollatzApp\Core;
+
+abstract class AbstractCollatz {
+    protected int $startValue;
+
+    public function __construct(int $startValue) {
+        $this->startValue = $startValue;
+    }
+
+    abstract public function computeSequence(): array;
+}
